@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy3-5</title>
+<style type="text/css">
+	form{
+		border: dotted #4BA598;
+		background-color: #B2E6D8;
+		text-align: center;
+	}
+	.icon-user{
+    position: absolute;
+left: 0；z-index:5;                                            margin-top: 8px;
+    background-image: url(username.png); /*引入图片图片*/
+    background-repeat: no-repeat; /*设置图片不重复*/
+    background-position: 0px 0px; /*图片显示的位置*/
+    width: 25px; /*设置图片显示的宽*/
+    height: 30px; /*图片显示的高*/
+    left: 417px;
+    top: 96px;
+}
+.icon-pass{
+    position: absolute;
+left: 0；z-index:5;                            margin-top: 8px;
+    background-image: url(password.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 25px;
+    height: 30px;
+    left: 418px;
+    top: 133px;
+}
+	i{
+		background-position: 0px 0px;
+	}
+</style>
+</head>
+
+<body>
+	<form action="" method="post" name="登陆表">
+	<h1>用户登录</h1>
+	<hr/>
+	<p>用户名:
+		<i class="icon-user"></i>
+		<input type="text" name="userName" maxlength="8">
+	</p>
+	<p>密 码：
+		<i class="icon-pass"></i>
+		<input type="password" name="pass" maxlength="20">
+	</p>
+	<p>
+		<input type="submit" name="signIn" value="登录">
+		<input type="submit" name="register" value="注册">
+	</p>
+	</form>
+</body>
+</html>
